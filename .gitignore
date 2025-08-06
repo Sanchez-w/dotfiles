@@ -1,4 +1,5 @@
 *
 !.gitignore
 !nvim/
-!nvim/*
+!nvim/**/*
+!nvim/**/.*
