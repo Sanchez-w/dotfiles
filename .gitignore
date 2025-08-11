@@ -3,3 +3,12 @@
 !nvim/
 !nvim/**/*
 !nvim/**/.*
+!picom/
+!picom/**/*
+!picom/**/.*
+!river/
+!river/**/*
+!river/**/.*
+!rofi/
+!rofi/**/*
+!rofi/**/.*
