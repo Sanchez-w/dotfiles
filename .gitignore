@@ -1,14 +1,14 @@
-*
-!.gitignore
-!nvim/
-!nvim/**/*
-!nvim/**/.*
-!picom/
-!picom/**/*
-!picom/**/.*
-!river/
-!river/**/*
-!river/**/.*
-!rofi/
-!rofi/**/*
-!rofi/**/.*
+# *
+# !.gitignore
+# !nvim/
+# !nvim/**/*
+# !nvim/**/.*
+# !picom/
+# !picom/**/*
+# !picom/**/.*
+# !river/
+# !river/**/*
+# !river/**/.*
+# !rofi/
+# !rofi/**/*
+# !rofi/**/.*

@@ -7,19 +7,19 @@
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 --
-require("blink.cmp").setup({
-  menu = {
-    auto_show = true,
-    draw = {
-      columns = {
-        { "lable", "lable_description", gap = 1 },
-        { "kind_icon", "kind" },
-      },
-    },
-  },
-  documentation = { auto_show = true, auto_show_delay_ms = 500 },
-  ghost_text = { enable = false },
-})
+-- require("blink.cmp").setup({
+--   menu = {
+--     auto_show = true,
+--     draw = {
+--       columns = {
+--         { "lable", "lable_description", gap = 1 },
+--         { "kind_icon", "kind" },
+--       },
+--     },
+--   },
+--   documentation = { auto_show = true, auto_show_delay_ms = 500 },
+--   ghost_text = { enable = false },
+-- })
 
 -- This file is automatically loaded by lazyvim.config.init.
 
