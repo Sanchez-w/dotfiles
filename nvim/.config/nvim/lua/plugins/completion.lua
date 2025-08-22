@@ -134,7 +134,7 @@ return {
   {
     "mason-org/mason-lspconfig.nvim",
     opts = {
-      ensure_installed = { "lua_ls", "rust_analyzer", "clangd" },
+      ensure_installed = { "lua_ls", "rust_analyzer", "clangd", "bash-language-server", "lua-language-server" },
       automatic_installation = true,
     },
     dependencies = {
