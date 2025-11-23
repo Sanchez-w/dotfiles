@@ -4,7 +4,7 @@ return {
     -- optional: provides snippets for the snippet source
     dependencies = { "rafamadriz/friendly-snippets" },
 
-    event = { 'BufReadPost', 'BufNewFile' },
+    event = { "BufReadPost", "BufNewFile" },
 
     -- use a release tag to download pre-built binaries
     version = "1.*",
@@ -32,6 +32,7 @@ return {
         preset = "none",
         -- ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
         ["<C-CR>"] = { "show", "show_documentation", "hide_documentation" },
+        -- ["<C-q>"] = { "hide", "fallback" },
         ["<C-e>"] = { "hide", "fallback" },
 
         ["<Tab>"] = {
@@ -100,6 +101,11 @@ return {
     opts_extend = { "sources.default" },
   },
   {
+    "mrcjkb/rustaceanvim",
+    version = "^6", -- Recommended
+    lazy = false, -- This plugin is already lazy
+  },
+  {
     "neovim/nvim-lspconfig",
     dependencies = { "saghen/blink.cmp" },
 
@@ -107,6 +113,7 @@ return {
     opts = {
       servers = {
         lua_ls = {},
+        -- marksman = {},
       },
     },
     config = function(_, opts)
@@ -120,14 +127,17 @@ return {
     end,
   },
   {
-    "williamboman/mason.nvim",
-    event = { 'BufReadPost', 'BufNewFile' },
+    "mason-org/mason.nvim",
+    event = { "BufReadPost", "BufNewFile" },
     opts = {
       ensure_installed = {
         "stylua",
         "shellcheck",
         "shfmt",
+        "marksman",
         "flake8",
+        "prettierd",
+        "cbfmt",
       },
     },
   },

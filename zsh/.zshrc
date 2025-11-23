@@ -10,6 +10,8 @@
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORMTHEME=qt6ct
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -110,6 +112,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias blue='sh $HOME/WM/dwm-6.5/scripts/bluetooth_headphones-con.sh &'
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
+alias dp='sh $HOME/.config/google-chrome/chrome-proxy/DoubleProxy.sh '
 
 function y() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd

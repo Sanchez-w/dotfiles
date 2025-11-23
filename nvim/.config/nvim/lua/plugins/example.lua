@@ -122,6 +122,7 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
+      parser_installer = { use_substitute = false },
       highlight = {
         enable = true,
         additional_vim_regex_highlighting = false,

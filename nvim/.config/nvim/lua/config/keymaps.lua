@@ -5,6 +5,11 @@
 
 vim.g.mapleader = " "
 
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "[G]oto [D]efinition（跳转到 [[链接]]）" })
+vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc("悬停预览链接内容") })
+vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc("[G]oto [R]eferences（查找谁引用了我）") })
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc("[R]e[N]ame（重命名所有链接）") })
+
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "co", ":ColorizerToggle<CR>")
