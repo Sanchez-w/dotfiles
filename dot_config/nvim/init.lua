@@ -1,0 +1,11 @@
+-- require("config.lazy")
+require("config.autocmds")
+require("config.keymaps")
+require("config.options")
+
+require("plugins.schemes")
+require("plugins.completion")
+require("plugins.lsp")
+require("plugins.treesitter")
+require("plugins.markdown")
+require("plugins.snacks")
